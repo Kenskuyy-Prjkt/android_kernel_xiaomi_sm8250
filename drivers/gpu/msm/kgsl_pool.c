@@ -10,6 +10,10 @@
 #include <linux/scatterlist.h>
 #include <linux/swap.h>
 
+#ifdef CONFIG_LUNAR_SIGNATURE
+#include <linux/lunar_attributes.h>
+#endif
+
 #include "kgsl_device.h"
 #include "kgsl_pool.h"
 #include "kgsl_sharedmem.h"
