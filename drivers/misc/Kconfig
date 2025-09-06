@@ -4,6 +4,11 @@
 
 menu "Misc devices"
 
+config LUNAR_SIGNATURE
+    tristate "Signature LUNAR kernel build"
+    default n
+    help
+      Enable this to build the LUNAR kernel signature attributes module.
 config SENSORS_LIS3LV02D
 	tristate
 	depends on INPUT
