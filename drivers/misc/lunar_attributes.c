@@ -6,7 +6,7 @@
 #include <linux/lunar_attributes.h>
 
 struct lunar_attributes lunar_data = {
-    .lunar_kgsl_skip_zeroing = 0,
+    .kgsl_skip_zeroing = 0,
 };
 
 #define LUNAR_ATTR_RW(name) \
