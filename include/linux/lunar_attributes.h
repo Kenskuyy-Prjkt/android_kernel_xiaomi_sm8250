@@ -8,7 +8,7 @@
 #include <linux/sysfs.h>
 
 struct lunar_attributes {
-    int lunar_kgsl_skip_zeroing;
+    int kgsl_skip_zeroing;
 };
 
 extern struct lunar_attributes lunar_data;
