@@ -24,10 +24,10 @@ static ssize_t name##_store(struct kobject *kobj, struct kobj_attribute *attr, c
 } \
 static struct kobj_attribute name##_attr = __ATTR(name, 0644, name##_show, name##_store);
 
-LUNAR_ATTR_RW(lunar_kgsl_skip_zeroing);
+LUNAR_ATTR_RW(kgsl_skip_zeroing);
 
 static struct attribute *lunar_attrs[] = {
-    &lunar_kgsl_skip_zeroing_attr.attr,
+    &kgsl_skip_zeroing_attr.attr,
     NULL
 };
 
